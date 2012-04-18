@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C66B2BF4153F702800F1E3A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66B2BF3153F702800F1E3A2 /* UIKit.framework */; };
+		C66B2BF6153F702800F1E3A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66B2BF5153F702800F1E3A2 /* Foundation.framework */; };
+		C66B2BF8153F702800F1E3A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66B2BF7153F702800F1E3A2 /* CoreGraphics.framework */; };
+		C66B2BFE153F702800F1E3A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66B2BFC153F702800F1E3A2 /* InfoPlist.strings */; };
+		C66B2C00153F702800F1E3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B2BFF153F702800F1E3A2 /* main.m */; };
+		C66B2C04153F702900F1E3A2 /* EPayTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B2C03153F702900F1E3A2 /* EPayTestAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C66B2BEF153F702800F1E3A2 /* EPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66B2BF3153F702800F1E3A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C66B2BF5153F702800F1E3A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C66B2BF7153F702800F1E3A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C66B2BFB153F702800F1E3A2 /* EPay-Info.plist */ = {isa = PBXFileReference; path = "EPay-Info.plist"; sourceTree = "<group>"; };
+		C66B2BFD153F702800F1E3A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C66B2BFF153F702800F1E3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C66B2C01153F702800F1E3A2 /* EPay-Prefix.pch */ = {isa = PBXFileReference; path = "EPay-Prefix.pch"; sourceTree = "<group>"; };
+		C66B2C02153F702800F1E3A2 /* EPayTestAppDelegate.h */ = {isa = PBXFileReference; path = EPayTestAppDelegate.h; sourceTree = "<group>"; };
+		C66B2C03153F702900F1E3A2 /* EPayTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPayTestAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C66B2BEC153F702800F1E3A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66B2BF4153F702800F1E3A2 /* UIKit.framework in Frameworks */,
+				C66B2BF6153F702800F1E3A2 /* Foundation.framework in Frameworks */,
+				C66B2BF8153F702800F1E3A2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C66B2BE4153F702800F1E3A2 = {
+			isa = PBXGroup;
+			children = (
+				C66B2BF9153F702800F1E3A2 /* EPay */,
+				C66B2BF2153F702800F1E3A2 /* Frameworks */,
+				C66B2BF0153F702800F1E3A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C66B2BF0153F702800F1E3A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C66B2BEF153F702800F1E3A2 /* EPay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C66B2BF2153F702800F1E3A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C66B2BF3153F702800F1E3A2 /* UIKit.framework */,
+				C66B2BF5153F702800F1E3A2 /* Foundation.framework */,
+				C66B2BF7153F702800F1E3A2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C66B2BF9153F702800F1E3A2 /* EPay */ = {
+			isa = PBXGroup;
+			children = (
+				C66B2C02153F702800F1E3A2 /* EPayTestAppDelegate.h */,
+				C66B2C03153F702900F1E3A2 /* EPayTestAppDelegate.m */,
+				C66B2BFA153F702800F1E3A2 /* Supporting Files */,
+			);
+			path = EPay;
+			sourceTree = "<group>";
+		};
+		C66B2BFA153F702800F1E3A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C66B2BFB153F702800F1E3A2 /* EPay-Info.plist */,
+				C66B2BFC153F702800F1E3A2 /* InfoPlist.strings */,
+				C66B2BFF153F702800F1E3A2 /* main.m */,
+				C66B2C01153F702800F1E3A2 /* EPay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C66B2BEE153F702800F1E3A2 /* EPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C66B2C07153F702900F1E3A2 /* Build configuration list for PBXNativeTarget "EPay" */;
+			buildPhases = (
+				C66B2BEB153F702800F1E3A2 /* Sources */,
+				C66B2BEC153F702800F1E3A2 /* Frameworks */,
+				C66B2BED153F702800F1E3A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPay;
+			productName = EPay;
+			productReference = C66B2BEF153F702800F1E3A2 /* EPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C66B2BE6153F702800F1E3A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EPayTest;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "R&S I/S";
+			};
+			buildConfigurationList = C66B2BE9153F702800F1E3A2 /* Build configuration list for PBXProject "EPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C66B2BE4153F702800F1E3A2;
+			productRefGroup = C66B2BF0153F702800F1E3A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C66B2BEE153F702800F1E3A2 /* EPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C66B2BED153F702800F1E3A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66B2BFE153F702800F1E3A2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C66B2BEB153F702800F1E3A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66B2C00153F702800F1E3A2 /* main.m in Sources */,
+				C66B2C04153F702900F1E3A2 /* EPayTestAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C66B2BFC153F702800F1E3A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C66B2BFD153F702800F1E3A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C66B2C05153F702900F1E3A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C66B2C06153F702900F1E3A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C66B2C08153F702900F1E3A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPay/EPay-Prefix.pch";
+				INFOPLIST_FILE = "EPay/EPay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C66B2C09153F702900F1E3A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPay/EPay-Prefix.pch";
+				INFOPLIST_FILE = "EPay/EPay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C66B2BE9153F702800F1E3A2 /* Build configuration list for PBXProject "EPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C66B2C05153F702900F1E3A2 /* Debug */,
+				C66B2C06153F702900F1E3A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C66B2C07153F702900F1E3A2 /* Build configuration list for PBXNativeTarget "EPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C66B2C08153F702900F1E3A2 /* Debug */,
+				C66B2C09153F702900F1E3A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C66B2BE6153F702800F1E3A2 /* Project object */;
+}
