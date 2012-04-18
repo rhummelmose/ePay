@@ -13,6 +13,7 @@
 		C66B2BFE153F702800F1E3A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66B2BFC153F702800F1E3A2 /* InfoPlist.strings */; };
 		C66B2C00153F702800F1E3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B2BFF153F702800F1E3A2 /* main.m */; };
 		C66B2C04153F702900F1E3A2 /* EPayTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B2C03153F702900F1E3A2 /* EPayTestAppDelegate.m */; };
+		C66B2C0C153F705700F1E3A2 /* EPay.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B2C0B153F705700F1E3A2 /* EPay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		C66B2BF3153F702800F1E3A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C66B2BF5153F702800F1E3A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C66B2BF7153F702800F1E3A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C66B2BFB153F702800F1E3A2 /* EPay-Info.plist */ = {isa = PBXFileReference; path = "EPay-Info.plist"; sourceTree = "<group>"; };
+		C66B2BFB153F702800F1E3A2 /* EPay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPay-Info.plist"; sourceTree = "<group>"; };
 		C66B2BFD153F702800F1E3A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C66B2BFF153F702800F1E3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C66B2C01153F702800F1E3A2 /* EPay-Prefix.pch */ = {isa = PBXFileReference; path = "EPay-Prefix.pch"; sourceTree = "<group>"; };
-		C66B2C02153F702800F1E3A2 /* EPayTestAppDelegate.h */ = {isa = PBXFileReference; path = EPayTestAppDelegate.h; sourceTree = "<group>"; };
+		C66B2C01153F702800F1E3A2 /* EPay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EPay-Prefix.pch"; sourceTree = "<group>"; };
+		C66B2C02153F702800F1E3A2 /* EPayTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPayTestAppDelegate.h; sourceTree = "<group>"; };
 		C66B2C03153F702900F1E3A2 /* EPayTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPayTestAppDelegate.m; sourceTree = "<group>"; };
+		C66B2C0A153F705700F1E3A2 /* EPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPay.h; sourceTree = "<group>"; };
+		C66B2C0B153F705700F1E3A2 /* EPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				C66B2C02153F702800F1E3A2 /* EPayTestAppDelegate.h */,
 				C66B2C03153F702900F1E3A2 /* EPayTestAppDelegate.m */,
+				C66B2C0A153F705700F1E3A2 /* EPay.h */,
+				C66B2C0B153F705700F1E3A2 /* EPay.m */,
 				C66B2BFA153F702800F1E3A2 /* Supporting Files */,
 			);
 			path = EPay;
@@ -155,6 +160,7 @@
 			files = (
 				C66B2C00153F702800F1E3A2 /* main.m in Sources */,
 				C66B2C04153F702900F1E3A2 /* EPayTestAppDelegate.m in Sources */,
+				C66B2C0C153F705700F1E3A2 /* EPay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,11 +23,48 @@
 //    DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
-#import "EPay.h"
 
-@interface EPayTestAppDelegate : UIResponder <UIApplicationDelegate, EPayDelegate>
+#import <Foundation/Foundation.h>
 
-@property (strong, nonatomic) UIWindow *window;
+
+typedef enum {
+    CURRENY_DKK = 208,
+    CURRENCY_USD = 840
+} Currency;
+
+
+@class EPay;
+
+
+@protocol EPayDelegate<NSObject>
+
+@required
+
+- (void)begunProcessingPayment:(NSDictionary*)paymentParameters;
+- (void)didProcessPayment:(NSDictionary*)successParameters;
+- (void)paymentFailed:(NSError*)error;
+
+@end
+
+
+@interface EPay : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+
+@property (nonatomic) Currency currency;
+@property (strong, nonatomic) NSString *merchantNumber;
+@property (strong, nonatomic) NSString *md5Secret;
+@property (strong, nonatomic) id<EPayDelegate> delegate;
+@property (strong, readonly, nonatomic) NSString *subscription;
+@property (strong, readonly, nonatomic) NSString *amount;
+@property (strong, readonly, nonatomic) NSString* orderID;
+
++ (EPay*)ePayWithMerchantNumber:(NSString*)merchantNumber md5Secret:(NSString*)md5Secret currency:(Currency)currency;
+
+- (void)makePaymentWithOrderID:(NSString*)orderID
+                        amount:(NSString*)amount
+                    cardNumber:(NSString*)cardNumber
+                   expiryMonth:(NSString*)expiryMonth
+                    expiryYear:(NSString*)expiryYear
+                           CVC:(NSString*)CVC
+                  subscription:(NSString*)subscription;
 
 @end
