@@ -141,7 +141,7 @@
     NSMutableString* postString = [[NSMutableString alloc] init];
     [postString appendFormat:@"merchantnumber=%@&currency=%d", self.merchantNumber, self.currency];
     [postString appendFormat:@"&orderid=%@&amount=%@&cardno=%@&expmonth=%@&expyear=%@&cvc=%@", self.orderID, self.amount, self.cardNumber, self.expiryMonth, self.expiryYear, self.CVC];
-    [postString appendString:@"&accepturl=https://ssl.ditonlinebetalingssystem.dk/auth/test/resultok.asp&declineurl=https://ssl.ditonlinebetalingssystem.dk/auth/test/resulterror.asp"];
+    [postString appendString:@"&accepturl=https://ssl.ditonlinebetalingssystem.dk/ok&declineurl=https://ssl.ditonlinebetalingssystem.dk/declined"];
     
     if (self.md5Secret) {
         NSString *md5Key = [self md5OfString:[NSString stringWithFormat:@"%d%@%@%@", self.currency, self.amount, self.orderID, self.md5Secret]];
