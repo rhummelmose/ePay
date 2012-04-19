@@ -53,3 +53,8 @@ If you have questions or anything on your mind, you can reach me at
 
 *   Twitter: rasmus_th
 *   Email: rasmus@hummelmose.dk
+
+License
+-------
+
+`ePay` is released under the MIT license.
