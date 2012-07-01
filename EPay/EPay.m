@@ -122,14 +122,12 @@
     [self.request setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [self.request setValue:@"application/x-www-form-urlencoded charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     [self.request setHTTPBody:postData];
+    [self.request setCachePolicy:NSURLCacheStorageNotAllowed];
     
     NSDictionary *paymentParameters = [self extractParametersFromPostString:[[NSString alloc]initWithData:postData encoding:NSUTF8StringEncoding]];
     [self.delegate begunProcessingPayment:paymentParameters];
     
-    self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
-    [self.connection setDelegateQueue:self.queue];
-    [self.connection start];
-    
+    self.connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:YES];
 }
 
 - (NSData*)buildPostData
@@ -244,6 +242,16 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     self.responseBody = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    [self.delegate paymentFailed:error];
+    [self clean];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
     NSDictionary *responseParameters = [self extractParametersFromURL:self.response.URL];
     
     if (!responseParameters) {
@@ -266,10 +274,9 @@
     [self clean];
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse
 {
-    [self.delegate paymentFailed:error];
-    [self clean];
+    return nil;
 }
 
 - (NSDictionary*)extractParametersFromPostString:(NSString*)string
